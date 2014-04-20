@@ -5,6 +5,13 @@
 	<artifactId>requirejs-optimize-plugin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>requirejs-optimize-plugin</name>
+	<packaging>maven-plugin</packaging>
+
+	<parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
 
 	<dependencies>
 		<dependency>
