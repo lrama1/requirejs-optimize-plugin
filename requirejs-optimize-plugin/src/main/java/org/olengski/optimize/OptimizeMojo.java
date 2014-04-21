@@ -80,6 +80,14 @@ public class OptimizeMojo extends AbstractMojo {
      */
     private boolean skip;
 
+    
+    /**
+     * Skip optimization when this parameter is true.
+     *
+     * @parameter expression="${requirejs.optimize.userDefinedTarget}" default-value=false
+     */
+    private String userDefinedTarget;
+    
     /**
      * Defines which javascript engine to use. Possible values: rhino or nodejs.
      *
@@ -176,6 +184,7 @@ public class OptimizeMojo extends AbstractMojo {
             try {
             	String artifactId = project.getModel().getArtifactId();
             	String version = project.getModel().getVersion();
+            	String target = userDefinedTarget;
                 //File profileDir = new File(buildDirectory, "requirejs-config/");
             	File profileDir = new File(buildDirectory, artifactId + "-" + version + "/WEB-INF/resources/");
                 profileDir.mkdirs();
