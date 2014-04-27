@@ -182,11 +182,13 @@ public class OptimizeMojo extends AbstractMojo {
             File filteredConfig;
 
             try {
-            	String artifactId = project.getModel().getArtifactId();
-            	String version = project.getModel().getVersion();
             	String target = userDefinedTarget;
-                //File profileDir = new File(buildDirectory, "requirejs-config/");
-            	File profileDir = new File(buildDirectory, artifactId + "-" + version + "/WEB-INF/resources/");
+            	File profileDir = null;
+            	if(target == null || "".equals(target)){
+            		profileDir = new File(buildDirectory, "requirejs-config/");
+            	}else{
+            		profileDir = new File(buildDirectory, target);
+            	}
                 profileDir.mkdirs();
                 filteredConfig = new File(profileDir, "filtered-build.js");
                 if (!filteredConfig.exists()) {
