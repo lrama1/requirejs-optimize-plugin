@@ -6,12 +6,17 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>requirejs-optimize-plugin</name>
 	<packaging>maven-plugin</packaging>
-
+	<licenses>
+		<license>
+			<name>The MIT License (MIT)</name>
+			<url>http://opensource.org/licenses/MIT</url>
+		</license>
+	</licenses>
 	<parent>
-        <groupId>org.sonatype.oss</groupId>
-        <artifactId>oss-parent</artifactId>
-        <version>7</version>
-    </parent>
+		<groupId>org.sonatype.oss</groupId>
+		<artifactId>oss-parent</artifactId>
+		<version>7</version>
+	</parent>
 
 	<dependencies>
 		<dependency>
@@ -73,7 +78,7 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
-	<!-- test ss-->
+	<!-- test ss -->
 
 	<build>
 		<pluginManagement>
