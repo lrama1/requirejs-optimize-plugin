@@ -84,7 +84,7 @@ public class OptimizeMojo extends AbstractMojo {
     /**
      * Skip optimization when this parameter is true.
      *
-     * @parameter expression="${requirejs.optimize.userDefinedTarget}" default-value=false
+     * @parameter expression="${requirejs.optimize.userDefinedTarget}"
      */
     private String userDefinedTarget;
     
