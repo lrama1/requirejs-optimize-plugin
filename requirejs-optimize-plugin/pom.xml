@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.olengski</groupId>
 	<artifactId>requirejs-optimize-plugin</artifactId>
-	<version>1.4-RELEASE</version>
+	<version>1.5-RELEASE</version>
 	<name>requirejs-optimize-plugin</name>
 	<description>Maven plugin for optmizing AMD Javascripts</description>
 	<packaging>maven-plugin</packaging>
